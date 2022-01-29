@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="en">
+    <head>
+    <meta content="width=device-width, initial-scale=1.0, charset=utf-8" name="viewport" />
+    <meta http-equiv="onion-location" content="http://chaoxuo7g4tqdyeikjo6jaa6dmk34vmdp3s577hgeusuntmcfd4xaxqd.onion" />
+      <title>Chaox is based</title>
+    <style type="text/css">
+      :root {
+        /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
+
+        /* applies to all areas */
+        --font-family: sans-serif;
+        --font-size: 14px;
+        --line-height: 1.3em;
+        --font-color: white;
+        --link-color: #c0b126;
+        --link-text-decoration: none;
+
+        /* main content (between sidebars) */
+        --content-padding: 25px;
+        --content-bg-color: #79371d;
+
+        /* header */
+        --header-height: 150px;
+        --header-background: url('static/img/chaox-banner.svg');
+        --header-margin-bottom: 10px;
+
+        /* sidebar */
+        --sidebar-margin: 10px;
+        --sidebar-width: 150px;
+        --sidebar-padding: 15px;
+        --sidebar-bg-color: #79371d;
+
+        /* footer */
+        --footer-height: 30px;
+        --footer-bg-color: #79371d;
+
+        /* navbar */
+        --navitems-alignment: center;
+        --space-between-navitems: 20px;
+        --navbar-margin-bottom: 10px;
+        --nav-bg-color: #79371d;
+
+        /* container */
+        --container-width: 800px;
+        --container-bg-color: transparent;
+
+        /* controls the gap between the content and the footer */
+        --row-gap: 5px;
+
+        /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
+
+        --sidebar-height: 100%;
+        --sidebar-overflow: hidden;
+        --background-color: #3e5e16;
+        --background-image: url("static/img/background.png")
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        background-image: var(--background-image);
+        background-size: cover;
+        font-family: var(--font-family);
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+        color: var(--font-color);
+      }
+
+      body a {
+        color: var(--link-color);
+        font-weight: bold;
+        text-decoration: var(--link-text-decoration);
+      }
+
+      #main-container {
+        max-width: var(--container-width);
+        margin: 0 auto;
+        background-color: var(--container-bg-color);
+      }
+
+      .flex {
+        display: flex;
+        margin-bottom: var(--row-gap);
+      }
+
+      .content-wrap {
+        margin-top: var(--content-margin-top);
+      }
+
+      #content-container {
+        width: 60%;
+        margin-bottom: var(--row-gap);
+        background-color: var(--content-bg-color);
+      }
+
+      #left-sidebar {
+        width: var(--sidebar-width);
+        margin-right: var(--sidebar-margin);
+        margin-bottom: var(--row-gap);
+        height: var(--sidebar-height);
+        overflow: var(--sidebar-overflow);
+        background-color: var(--sidebar-bg-color);
+      }
+
+      #right-sidebar {
+        width: var(--sidebar-width);
+        margin-left: var(--sidebar-margin);
+        margin-bottom: var(--row-gap);
+        height: var(--sidebar-height);
+        overflow: var(--sidebar-overflow);
+        background-color: var(--sidebar-bg-color);
+      }
+
+      #header-contained {
+        height: var(--header-height);
+        margin-bottom: var(--header-margin-bottom);
+        background-image: var(--header-background);
+        background-position: center center;
+        background-size: cover;
+      }
+
+      #footer {
+        height: var(--footer-height);
+        text-align: center;
+        color: var(--font-color);
+        background-color: var(--footer-bg-color);
+      }
+
+      #header-full {
+        display: none;
+        height: var(--header-height);
+        margin-bottom: var(--header-margin-bottom);
+        background-image: var(--header-background);
+        background-position: center center;
+      }
+
+      #navbar-contained {
+        margin-bottom: var(--row-gap)
+      }
+
+      #navbar-full {
+        display: none;
+      }
+
+      .nav {
+        margin-left: 0;
+        text-align: var(--navitems-alignment);
+        margin-top: 0;
+        margin-bottom: var(--navbar-margin-bottom);
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: var(--nav-bg-color);
+      }
+
+      .nav li {
+        display: inline-block;
+        padding-right: var(--space-between-navitems);
+      }
+
+      .nav li a {}
+
+      .wrapper {
+        padding: var(--content-padding);
+        padding-top: var(--sidebar-padding);
+      }
+
+      .sidebar-wrapper {
+        padding: var(--sidebar-padding);
+        height: var(--sidebar-height);
+        overflow: var(--sidebar-overflow);
+      }
+
+      .footer-wrapper {
+        padding: 5px;
+      }
+
+      /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
+      @media only screen and (max-width: 800px) {
+        .flex {
+          flex-wrap: wrap;
+        }
+
+        #left-sidebar {
+          width: 100%;
+          display: block;
+          order: 2;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        #right-sidebar {
+          width: 100%;
+          display: block;
+          order: 3;
+          margin-left: 0;
+        }
+
+        #content-container {
+          width: 100%;
+          display: block;
+          order: 1;
+          margin-bottom: 10px;
+        }
+
+      }
+    </style>
+</head>
+    <body>
+    <div id="main-container">
+      <div id="header-contained"></div>
+      <div id="navbar-contained">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="old-ver.xhtml">Old website</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="webring.xhtml">Webring</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="content-wrap flex alignment">
+        <div id="content-container" style="flex-grow: 1;">
+          <div class="wrapper">
+            <h1 id="welcome-visitor-">Welcome, visitor!</h1>
+              <p>You have stumbled upon one of the remaining pieces of The Internet, without tracking, ads and all other nasty crap. Take a look around!</p>
+              <h2 id="who-are-we">Who are we</h2>
+              <p>Right now, Chaox is represented by just me, Ty3r0X, since I just fired this site on the web :P, but if you believe in a free, decentralized and harmonious web, you can take part of this community!</p>
+              <h2 id="there-is-one-small-problem">There is one small problem</h2>
+              <p>I don&#39;t have a server :/. Right now I&#39;m hosting on leprd.space (special thanks to lysianthus for providing me the gear to host right now), but my end goal is to self-host (have a server in my room, no joking),
+                but it&#39;s going to be a heck of a ton of work configuring it and protecting it, so for starters I&#39;ll try to get some pocket money and fire up a VPS. If anyone knows anything about system administration and hosting in general,
+                I would love to know!</p>
+              <p>If anyone wants to financially support this website, you can donate via <a href="monero:49ZuMLhspGjgT5au9S8voAizhnFbcp41PFjavZK475USRrRUanu6YePTiXdLp7u6oiRteGZ9cTJjU2hMWa3n2VuJM5jgQSt">Monero</a>.</p>
+              <h2 id="contact-info">Contact info</h2>
+              <ul>
+                <li><a href="https://ty3r0x.chaox.ro">Ty3r0X </a>(<a href="https://ty3r0x.neocities.org">neocities</a>)</li>
+                <li><a href="xmpp:ty3r0x@ebin.city">XMPP</a></li>
+                <li><a href="mailto:ty3r0x@elude.in">Email</a></li>
+                <li><a href="https://ty3r0x.neocities.org/gpg.txt">GPG Key</a></li>
+              </ul>
+              <p>Okay, so initially I played with marquees and GIFs on the homepage, but after seeing <a href="http://www.catb.org/~esr/html-hell.html">Raymond's page</a> I decided it's best not keep it simple. Sorry for provoking any brain damage!</p>
+              <h3><a href="/gigachad">GIGACHAD</a> SUPREMACY!</h3>
+          </div>
+        </div>
+        <div id="right-sidebar" style="display: block;">
+          <div class="sidebar-wrapper">
+            <a href="http://validator.w3.org/check?uri=https://chaox.ro">
+					<img style="border:0;width:88px;height:31px" src="static/img/88x31/valid-xhtml11-v.svg"
+						alt="Valid XHTML"/></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=chaox.ro">
+            <img style="border:0;width:88px;height:31px" src="static/img/88x31/valid-css-blue-v.svg" alt="Valid CSS!" /></a>
+            <p>The server is rather new, and right now my resources are non-existent. Hang in there,
+                soldier, I am friends with many people offering diferent services. Be sure to check 'em out!</p>
+            <a rel="rel" href="https://www.qorg11.net"><img alt="qorg11" style="border-width:0" src="static/img/88x31/qorg11.gif" /></a>
+            <a rel="rel" href="https://redxen.eu"><img alt="Redxen" style="border-width:0" src="static/img/88x31/redxen.gif" /></a>
+            <a rel="rel" href="https://www.retroimages.net"><img alt="retroimages" style="border-width:0" src="static/img/88x31/retroimages.png" /></a>
+            <a rel="rel" href="https://getimiskon.xyz"><img alt="getimiskon" style="border-width:0" src="static/img/88x31/getimiskon.png" /></a>
+            <p>For those who like to hoard banners on their sites, here is ours!</p>
+            <a rel="rel" href="https://chaox.ro/static/img/88x31/chaox-wbanner.png"><img alt="Chaox" style="border-width:0" src="static/img/88x31/chaox-wbanner.png" /></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-wrapper">2022 Chaox Operations</div>
+      </div>
+    </div>
+    </body>
+</html>
+
